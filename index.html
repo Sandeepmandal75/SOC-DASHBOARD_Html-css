@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOC Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <h2>SOC Panel</h2>
+    <ul>
+        <li>Dashboard</li>
+        <li>Alerts</li>
+        <li>Incidents</li>
+        <li>Reports</li>
+    </ul>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <h1>Security Operations Center</h1>
+        <span>Analyst: Sandeep</span>
+    </div>
+
+    <!-- Alert Cards -->
+    <div class="cards">
+        <div class="card critical">Critical<br><span>5</span></div>
+        <div class="card high">High<br><span>12</span></div>
+        <div class="card medium">Medium<br><span>20</span></div>
+        <div class="card low">Low<br><span>32</span></div>
+    </div>
+
+    <!-- Alerts Table -->
+    <h2>Recent Alerts</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Alert Name</th>
+            <th>Severity</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>10:32</td>
+            <td>SSH Brute Force</td>
+            <td class="critical">Critical</td>
+            <td>Open</td>
+        </tr>
+        <tr>
+            <td>11:10</td>
+            <td>Malware Detected</td>
+            <td class="high">High</td>
+            <td>Investigating</td>
+        </tr>
+        <tr>
+            <td>12:01</td>
+            <td>Phishing Email</td>
+            <td class="medium">Medium</td>
+            <td>Resolved</td>
+        </tr>
+    </table>
+
+    <!-- System Status -->
+    <h2>System Status</h2>
+    <div class="status">
+        <div class="status-card online">Firewall: Online</div>
+        <div class="status-card online">SIEM: Online</div>
+        <div class="status-card offline">Endpoint: Down</div>
+    </div>
+
+</div>
+
+</body>
+</html>
